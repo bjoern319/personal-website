@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/bjoern319/personal-website/issues"
   },
-  "homepage": "https://github.com/bjoern319/personal-website#readme"
+  "homepage": "https://github.com/bjoern319/personal-website#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4"
+  }
 }
