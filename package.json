@@ -1,0 +1,19 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjoern319/personal-website.git"
+  },
+  "author": "Björn Geisler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bjoern319/personal-website/issues"
+  },
+  "homepage": "https://github.com/bjoern319/personal-website#readme"
+}
