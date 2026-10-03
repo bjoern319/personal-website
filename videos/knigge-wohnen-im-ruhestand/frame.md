@@ -2,40 +2,38 @@
 version: alpha
 name: KNIGGE Immobilien — Frame (video layer)
 description: >
-  Video-Designsystem für KNIGGE Immobilien e.K. Abgeleitet aus vorhandenen KNIGGE-Designs:
-  rotes, gefaltetes K-Quadrat als Bildmarke, Wortmarke in Montserrat (KNIGGE fett, IMMOBILIEN
-  gesperrt), diagonale Schnitte als Gestaltungsmotiv, viel Weiß/Warmweiß. Für die Zielgruppe
-  Ruhestand: warm, ruhig, gut lesbar, großzügige Schriftgrößen, sanfte Bewegungen.
+  Video-Designsystem für KNIGGE Immobilien e.K., abgeleitet von knigge-immobilien.de:
+  gefaltetes K-Quadrat als Bildmarke, Wortmarke in Montserrat (KNIGGE fett, IMMOBILIEN gesperrt)
+  in Schiefergrau, Überschriften in Montserrat Regular (Rot oder Schiefergrau), Bordeaux-Buttons
+  auf hellgrauen Flächen. Für die Zielgruppe Ruhestand: ruhig, gut lesbar, große Schrift.
 unit: the frame — 1920×1080 (YouTube) und 1080×1920 (Reels); Szenen skalieren über cqmin
 principle: CI-Atome sind fix · Komposition ist frei · Fakten nur aus dem Brief
 
 colors:
-  canvas: "#F5F0E8"        # warmes Leinen – Grundfläche aller Szenen
-  canvas-deep: "#ECE3D5"   # Sand – Panels, Flächen
-  paper: "#FFFDF9"         # Hauswände, Karten, Pills
-  ink: "#2A2725"           # Anthrazit, warm – Text & Linienzeichnung
-  ink-muted: "#5F5A54"     # Sekundärtext
-  ink-soft: "#8C857C"      # Hilfslinien
-  red: "#C8102E"           # KNIGGE-Rot – Bildmarke, Akzente, CTA
-  red-deep: "#8E1520"      # Bordeaux – Faltkante der Bildmarke
-  red-dark: "#5E0D16"      # Schatten der Bildmarke
+  canvas: "#ECEEEA"        # Hellgrau der Website-Sektionen – Grundfläche aller Szenen
+  paper: "#FFFFFF"         # Weiß – Hauswände, Labels
+  ink: "#444F4F"           # Schiefergrau – Text, Wortmarke, Linienzeichnung (Website)
+  ink-muted: "#5E6A6A"     # Sekundärtext
+  red: "#CA2C35"           # KNIGGE-Rot – Überschriften, Akzente, Dach (Website)
+  red-deep: "#6D131B"      # Bordeaux – Buttons/Toggles auf grauen Flächen (Website)
+  mark-dark: "#4A0A13"     # dunkelste Facette der Bildmarke
   warm-light: "#F2C36B"    # Fensterlicht = Leben/Erinnerung (funktional, nicht dekorativ)
   night: "#AEB6BF"         # Fenster ohne Licht (Szene „Stille“)
+  leaf: "#B9C2A0"          # Laub (nur Illustration)
 
 radii:
-  pill: "999px"
-  card: "18px"
+  button: "1cqmin"         # leicht gerundete Rechtecke wie auf der Website
+  label: "0.9cqmin"
   mark: "0"                # Bildmarke ist streng quadratisch
 
 typography:
-  voice-serif:  { fontFamily: "Newsreader", style: italic, weight: 400, cqmin: 7.2, lineHeight: 1.12, color: "ink" }   # emotionale Stimme
+  voice:        { fontFamily: "Montserrat", weight: 400, cqmin: 5.6, lineHeight: 1.2, color: "ink" }   # ruhige Stimme (wie Website-Überschriften)
   headline:     { fontFamily: "Montserrat", weight: 700, cqmin: 6.4, lineHeight: 1.12, tracking: "-0.02em", color: "ink" }
-  tagline:      { fontFamily: "Montserrat", weight: 900, cqmin: 10.5, lineHeight: 1.0, tracking: "-0.03em", color: "red" }
+  tagline:      { fontFamily: "Montserrat", weight: 900, cqmin: 11.5, lineHeight: 1.0, tracking: "-0.035em", color: "red" }
   body:         { fontFamily: "Montserrat", weight: 400, cqmin: 4.2, lineHeight: 1.3, color: "ink-muted" }
-  list:         { fontFamily: "Montserrat", weight: 700, cqmin: 4.4, lineHeight: 1.2, color: "ink" }
-  eyebrow:      { fontFamily: "Montserrat", weight: 700, cqmin: 2.4, tracking: "0.2em", upper: true, color: "red" }
-  wordmark:     { fontFamily: "Montserrat", weight: 700, tracking: "0.02em", upper: true }
-  wordmark-sub: { fontFamily: "Montserrat", weight: 400, tracking: "0.34em", upper: true }
+  list:         { fontFamily: "Montserrat", weight: 700, cqmin: 4.3, lineHeight: 1.2, color: "ink" }
+  wordmark:     { fontFamily: "Montserrat", weight: 700, upper: true, color: "ink" }      # KNIGGE
+  wordmark-sub: { fontFamily: "Montserrat", weight: 400, upper: true, color: "ink" }      # IMMOBILIEN, gesperrt
 
 spacing:
   pad-landscape: "6.5cqw"
@@ -46,20 +44,24 @@ spacing:
 
 components:
   k-mark:
-    description: "Rotes Quadrat mit drei Facetten (K-Faltung): links hellrot, rechts Bordeaux, unten rot mit Schatten zur Ecke; feine helle Kontur."
-  tag-pill:
+    description: "Quadrat aus drei Facetten (K-Faltung), vermessen am Website-Logo: A (0,0)-(79.5,0)-(0,100), R (79.5,0)-(100,0)-(100,100)-(47.5,40.2), B (0,100)-(47.5,40.2)-(100,100); Verläufe von Dunkelrot zu #CA2C35."
+  label:
     backgroundColor: "{colors.paper}"
     border: "0.3cqmin solid {colors.ink}"
-    rounded: "{radii.pill}"
+    rounded: "{radii.label}"
     typography: "Montserrat 700"
-  step-dot:
+  step-tile:
     backgroundColor: "{colors.red}"
     textColor: "{colors.paper}"
-    rounded: "50%"
-  cta-pill:
-    backgroundColor: "{colors.red}"
+    rounded: "{radii.button}"
+  icon-tile:
+    backgroundColor: "{colors.red-deep}"
     textColor: "{colors.paper}"
-    rounded: "{radii.pill}"
+    rounded: "{radii.button}"
+  cta-button:
+    backgroundColor: "{colors.red-deep}"
+    textColor: "{colors.paper}"
+    rounded: "{radii.button}"
     typography: "Montserrat 700"
   illustration:
     description: "Linienzeichnung in {colors.ink}, Flächen in paper/canvas-deep, Dächer und Akzente in {colors.red}; zeichnet sich per Strich auf (svg-path-draw)."
@@ -67,13 +69,14 @@ components:
 
 ## Overview
 
-Warm, vertrauensvoll, regional. Das Rot ist Signal, nicht Fläche: Bildmarke, Schlüsselwörter,
-Dach des Hauses, CTA. Alles andere lebt von Leinen, Papierweiß und warmem Anthrazit.
+Vertrauensvoll, regional, klar – wie die Website. Das Rot ist Signal, nicht Fläche: Bildmarke,
+Schlüsselwörter, Dach des Hauses. Buttons und Icon-Kacheln in Bordeaux, Text in Schiefergrau
+auf Hellgrau. Wärme entsteht über die Illustration (Fensterlicht, Sonne), nicht über die Palette.
 
 ## Voices
 
-- **Newsreader Italic** = innere Stimme / Gefühl („Erinnern Sie sich …?“).
-- **Montserrat 700/900** = KNIGGE spricht: klar, strukturiert, verlässlich (CI-Schrift).
+- **Montserrat 400** = ruhige, nachdenkliche Stimme (Fragen, Gefühle) – wie die Website-Überschriften.
+- **Montserrat 700/900** = KNIGGE spricht: klar, strukturiert, verlässlich.
 
 ## Do
 
@@ -84,4 +87,4 @@ Dach des Hauses, CTA. Alles andere lebt von Leinen, Papierweiß und warmem Anthr
 ## Don't
 
 - Keine Angstappelle, keine Superlative, keine Wettbewerber.
-- Kein reines Schwarz/Weiß, kein Rot als Vollfläche außer im Brand-Wipe und CTA.
+- Keine zusätzliche Schriftfamilie, kein reines Schwarz, kein Rot als Vollfläche außer im Brand-Wipe.

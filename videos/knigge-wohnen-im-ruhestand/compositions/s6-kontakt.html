@@ -6,12 +6,6 @@
   <body>
     <template id="s6-kontakt-template">
       <style>
-        @font-face {
-          font-family: "Newsreader";
-          src: url("assets/fonts/Newsreader-Italic-latin.woff2") format("woff2");
-          font-style: italic;
-          font-weight: 200 800;
-        }
         #root {
           position: absolute !important;
           inset: 0 !important;
@@ -20,7 +14,7 @@
           container: scene / size;
           overflow: hidden;
           font-family: "Montserrat", sans-serif;
-          color: #2a2725;
+          color: #444f4f;
         }
         .s6-col {
           position: absolute;
@@ -35,7 +29,7 @@
           text-align: center;
         }
         .s6-logo {
-          width: 63.3cqmin;
+          width: 67.8cqmin;
           height: 15cqmin;
           margin: 0 0 5cqmin;
         }
@@ -47,23 +41,15 @@
         }
         .s6-word {
           font-family: "Montserrat", sans-serif;
-          fill: #2a2725;
-        }
-        .s6-k-outline {
-          fill: none;
-          stroke: #fffdf9;
-          stroke-width: 2;
-          stroke-dasharray: 1 2;
-          stroke-dashoffset: 1.05;
+          fill: #444f4f;
         }
         .s6-invite {
           margin: 0 0 4.6cqmin;
           max-width: 80cqw;
-          font-family: "Newsreader", serif;
-          font-style: italic;
+          font-family: "Montserrat", sans-serif;
           font-weight: 400;
-          font-size: 5.8cqmin;
-          line-height: 1.15;
+          font-size: 4.9cqmin;
+          line-height: 1.2;
         }
         .s6-cup {
           display: inline-block;
@@ -75,7 +61,7 @@
         }
         .s6-cup path {
           fill: none;
-          stroke: #c8102e;
+          stroke: #ca2c35;
           stroke-width: 1.8;
           stroke-linecap: round;
           stroke-linejoin: round;
@@ -85,13 +71,13 @@
           overflow: hidden;
           margin: 0 0 3.4cqmin;
           padding: 1.7cqmin 4.4cqmin 1.9cqmin;
-          border-radius: 999px;
-          background: #c8102e;
-          color: #fffdf9;
+          border-radius: 1cqmin;
+          background: #6d131b;
+          color: #ffffff;
           font-size: 4.4cqmin;
           font-weight: 700;
           letter-spacing: -0.01em;
-          box-shadow: 0 1cqmin 2.4cqmin rgba(142, 21, 32, 0.25);
+          box-shadow: 0 1cqmin 2.4cqmin rgba(109, 19, 27, 0.25);
         }
         .s6-sheen {
           position: absolute;
@@ -117,13 +103,13 @@
           overflow: visible;
         }
         .s6-phone path {
-          fill: #c8102e;
+          fill: #ca2c35;
         }
         .s6-url {
           margin: 0 0 5cqmin;
           font-size: 4.2cqmin;
           font-weight: 400;
-          color: #5f5a54;
+          color: #5e6a6a;
         }
         .s6-claim {
           margin: 0;
@@ -132,7 +118,7 @@
           letter-spacing: -0.01em;
         }
         .s6-red {
-          color: #c8102e;
+          color: #ca2c35;
         }
         @container scene (orientation: portrait) {
           .s6-col {
@@ -140,12 +126,12 @@
             bottom: 22cqh;
           }
           .s6-logo {
-            width: 60.8cqmin;
+            width: 65cqmin;
             height: 14.4cqmin;
             margin-bottom: 6cqmin;
           }
           .s6-invite {
-            font-size: 6.2cqmin;
+            font-size: 5.4cqmin;
             margin-bottom: 6cqmin;
           }
           .s6-claim {
@@ -160,29 +146,29 @@
       <div id="root" data-composition-id="s6-kontakt" data-width="1920" data-height="1080" data-duration="9">
         <div class="s6-col">
           <div class="s6-logo">
-            <svg viewBox="0 0 422 100" role="img" aria-label="KNIGGE Immobilien" data-layout-allow-overlap>
+            <svg viewBox="0 0 452 100" role="img" aria-label="KNIGGE Immobilien" data-layout-allow-overlap>
               <defs>
-                <linearGradient id="s6-k-l" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#a30f21" />
-                  <stop offset="0.55" stop-color="#d4152d" />
-                  <stop offset="1" stop-color="#e01b31" />
+                <linearGradient id="s6-k-a" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="48.9" y2="39.6">
+                  <stop offset="0" stop-color="#5e0f18" />
+                  <stop offset="0.56" stop-color="#a4222b" />
+                  <stop offset="0.8" stop-color="#c12a33" />
+                  <stop offset="0.93" stop-color="#ca2c35" />
                 </linearGradient>
-                <linearGradient id="s6-k-r" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#6e0f17" />
-                  <stop offset="1" stop-color="#9c1b24" />
+                <linearGradient id="s6-k-r" gradientUnits="userSpaceOnUse" x1="47.5" y1="40.2" x2="100" y2="0">
+                  <stop offset="0" stop-color="#4a0a13" />
+                  <stop offset="1" stop-color="#b0252e" />
                 </linearGradient>
-                <linearGradient id="s6-k-b" x1="0" y1="1" x2="1" y2="0.6">
-                  <stop offset="0" stop-color="#8a0e1b" />
-                  <stop offset="0.5" stop-color="#c8132b" />
-                  <stop offset="1" stop-color="#de1a30" />
+                <linearGradient id="s6-k-b" gradientUnits="userSpaceOnUse" x1="0" y1="100" x2="100" y2="100">
+                  <stop offset="0" stop-color="#480a12" />
+                  <stop offset="0.5" stop-color="#a2222b" />
+                  <stop offset="0.85" stop-color="#ca2c35" />
                 </linearGradient>
               </defs>
-              <path id="s6-f-l" d="M0 0 H62 L46 44 L0 100 Z" fill="url(#s6-k-l)" />
-              <path id="s6-f-r" d="M62 0 H100 V100 L46 44 Z" fill="url(#s6-k-r)" />
-              <path id="s6-f-b" d="M0 100 L46 44 L100 100 Z" fill="url(#s6-k-b)" />
-              <path id="s6-k-outline" class="s6-k-outline" pathLength="1" d="M1 1 H99 V99 H1 Z" />
-              <text class="s6-word" data-layout-allow-overlap id="s6-w1" x="125" y="53" font-size="64" font-weight="700" textLength="294" lengthAdjust="spacing">KNIGGE</text>
-              <text class="s6-word" data-layout-allow-overlap id="s6-w2" x="126" y="97" font-size="41.5" font-weight="500" textLength="292" lengthAdjust="spacing">IMMOBILIEN</text>
+              <path id="s6-f-a" d="M0 0 H79.5 L0 100 Z" fill="url(#s6-k-a)" />
+              <path id="s6-f-r" d="M79.5 0 H100 V100 L47.5 40.2 Z" fill="url(#s6-k-r)" />
+              <path id="s6-f-b" d="M0 100 L47.5 40.2 L100 100 Z" fill="url(#s6-k-b)" />
+              <text class="s6-word" id="s6-w1" data-layout-allow-overlap x="125.2" y="53" font-size="77" font-weight="700" textLength="328.5" lengthAdjust="spacing">KNIGGE</text>
+              <text class="s6-word" id="s6-w2" data-layout-allow-overlap x="125.5" y="100" font-size="44.3" font-weight="400" textLength="330.5" lengthAdjust="spacing">IMMOBILIEN</text>
             </svg>
           </div>
 
@@ -217,10 +203,9 @@
           const tl = gsap.timeline({ paused: true });
 
           // Bildmarke faltet sich zusammen (logo-assemble-lockup)
-          tl.fromTo("#s6-f-l", { opacity: 0, x: -70, y: -36 }, { opacity: 1, x: 0, y: 0, duration: 0.85, ease: "power3.out" }, 0.35);
+          tl.fromTo("#s6-f-a", { opacity: 0, x: -70, y: -36 }, { opacity: 1, x: 0, y: 0, duration: 0.85, ease: "power3.out" }, 0.35);
           tl.fromTo("#s6-f-r", { opacity: 0, x: 70, y: -30 }, { opacity: 1, x: 0, y: 0, duration: 0.85, ease: "power3.out" }, 0.45);
           tl.fromTo("#s6-f-b", { opacity: 0, x: 0, y: 64 }, { opacity: 1, x: 0, y: 0, duration: 0.85, ease: "power3.out" }, 0.55);
-          tl.fromTo("#s6-k-outline", { strokeDashoffset: 1.05 }, { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 1.25);
           tl.fromTo("#s6-w1", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.6, ease: "power3.out" }, 1.0);
           tl.fromTo("#s6-w2", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.6, ease: "power3.out" }, 1.2);
 

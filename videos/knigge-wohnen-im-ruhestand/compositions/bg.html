@@ -15,12 +15,12 @@
           container: scene / size;
           overflow: hidden;
           font-family: "Montserrat", sans-serif;
-          color: #2a2725;
+          color: #444f4f;
         }
         .bg-fill {
           position: absolute;
           inset: 0;
-          background: #f5f0e8;
+          background: #eceeea;
         }
         .bg-glow {
           position: absolute;
@@ -31,8 +31,8 @@
           border-radius: 50%;
           background: radial-gradient(
             circle,
-            rgba(242, 195, 107, 0.34) 0%,
-            rgba(242, 195, 107, 0.12) 38%,
+            rgba(242, 195, 107, 0.2) 0%,
+            rgba(242, 195, 107, 0.07) 38%,
             rgba(242, 195, 107, 0) 68%
           );
         }
@@ -45,9 +45,9 @@
           border-radius: 50%;
           background: radial-gradient(
             circle,
-            rgba(200, 16, 46, 0.1) 0%,
-            rgba(200, 16, 46, 0.04) 40%,
-            rgba(200, 16, 46, 0) 68%
+            rgba(202, 44, 53, 0.1) 0%,
+            rgba(202, 44, 53, 0.04) 40%,
+            rgba(202, 44, 53, 0) 68%
           );
         }
         .bg-ghost-wrap {
@@ -64,15 +64,15 @@
           opacity: 0.14;
         }
         .bg-ghost .g-l {
-          fill: #c8102e;
+          fill: #ca2c35;
           opacity: 0.32;
         }
         .bg-ghost .g-r {
-          fill: #8e1520;
+          fill: #6d131b;
           opacity: 0.5;
         }
         .bg-ghost .g-b {
-          fill: #c8102e;
+          fill: #ca2c35;
           opacity: 0.42;
         }
         .bg-ghost-small-wrap {
@@ -92,7 +92,7 @@
           inset: 0;
           width: 100%;
           height: 100%;
-          opacity: 0.5;
+          opacity: 0.35;
           mix-blend-mode: multiply;
         }
       </style>
@@ -105,16 +105,16 @@
         <!-- große, sehr leise K-Faltung (Bildmarke als Wasserzeichen) -->
         <div class="bg-ghost-wrap" data-layout-allow-overflow>
           <svg class="bg-ghost" id="bg-ghost" viewBox="-2 -2 104 104" aria-hidden="true">
-            <path class="g-l" d="M0 0 H62 L46 44 L0 100 Z" />
-            <path class="g-r" d="M62 0 H100 V100 L46 44 Z" />
-            <path class="g-b" d="M0 100 L46 44 L100 100 Z" />
+            <path class="g-l" d="M0 0 H79.5 L0 100 Z" />
+            <path class="g-r" d="M79.5 0 H100 V100 L47.5 40.2 Z" />
+            <path class="g-b" d="M0 100 L47.5 40.2 L100 100 Z" />
           </svg>
         </div>
         <div class="bg-ghost-small-wrap" data-layout-allow-overflow>
           <svg class="bg-ghost" id="bg-ghost-small" viewBox="-2 -2 104 104" aria-hidden="true">
-            <path class="g-l" d="M0 0 H62 L46 44 L0 100 Z" />
-            <path class="g-r" d="M62 0 H100 V100 L46 44 Z" />
-            <path class="g-b" d="M0 100 L46 44 L100 100 Z" />
+            <path class="g-l" d="M0 0 H79.5 L0 100 Z" />
+            <path class="g-r" d="M79.5 0 H100 V100 L47.5 40.2 Z" />
+            <path class="g-b" d="M0 100 L47.5 40.2 L100 100 Z" />
           </svg>
         </div>
 

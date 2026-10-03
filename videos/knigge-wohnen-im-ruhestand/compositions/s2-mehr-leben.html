@@ -6,12 +6,6 @@
   <body>
     <template id="s2-mehr-leben-template">
       <style>
-        @font-face {
-          font-family: "Newsreader";
-          src: url("assets/fonts/Newsreader-Italic-latin.woff2") format("woff2");
-          font-style: italic;
-          font-weight: 200 800;
-        }
         #root {
           position: absolute !important;
           inset: 0 !important;
@@ -20,7 +14,7 @@
           container: scene / size;
           overflow: hidden;
           font-family: "Montserrat", sans-serif;
-          color: #2a2725;
+          color: #444f4f;
         }
 
         /* ---------- Layout 16:9 (Illustration identisch zu Szene 1) ---------- */
@@ -86,13 +80,14 @@
             bottom: auto;
             height: 23cqh;
           }
-          .s2-claim-2 {
+          #root .s2-claim-2 {
             font-size: 10.6cqmin;
           }
-          .s2-q {
-            font-size: 7.3cqmin;
+          #root .s2-q {
+            max-width: none;
+            font-size: 6.3cqmin;
           }
-          .s2-row-text {
+          #root .s2-row-text {
             font-size: 4.6cqmin;
           }
           .s2-list {
@@ -106,14 +101,14 @@
 
         /* ---------- Typografie ---------- */
         .s2-serif {
-          font-family: "Newsreader", serif;
-          font-style: italic;
+          font-family: "Montserrat", sans-serif;
           font-weight: 400;
         }
         .s2-q {
           margin: 0;
-          font-size: 6.6cqmin;
-          line-height: 1.14;
+          max-width: 37cqw;
+          font-size: 5.6cqmin;
+          line-height: 1.2;
           letter-spacing: -0.01em;
         }
         .s2-claim-1 {
@@ -131,7 +126,7 @@
           font-weight: 900;
           line-height: 1;
           letter-spacing: -0.035em;
-          color: #c8102e;
+          color: #ca2c35;
         }
         .s2-underline {
           position: absolute;
@@ -143,7 +138,7 @@
         }
         .s2-underline path {
           fill: none;
-          stroke: #c8102e;
+          stroke: #ca2c35;
           stroke-width: 6;
           stroke-linecap: round;
           stroke-dasharray: 1 2;
@@ -151,7 +146,7 @@
         }
         .s2-head {
           margin: 0 0 2.6cqmin;
-          font-size: 5.4cqmin;
+          font-size: 4.6cqmin;
           line-height: 1.1;
         }
         .s2-row {
@@ -164,8 +159,8 @@
           flex: 0 0 auto;
           width: 7.6cqmin;
           height: 7.6cqmin;
-          border-radius: 50%;
-          background: #c8102e;
+          border-radius: 1.1cqmin;
+          background: #6d131b;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -179,7 +174,7 @@
         .s2-ico circle,
         .s2-ico rect {
           fill: none;
-          stroke: #fffdf9;
+          stroke: #ffffff;
           stroke-width: 2;
           stroke-linecap: round;
           stroke-linejoin: round;
@@ -189,11 +184,11 @@
           font-size: 4.3cqmin;
           font-weight: 400;
           line-height: 1.2;
-          color: #5f5a54;
+          color: #5e6a6a;
         }
         .s2-row-text b {
           font-weight: 700;
-          color: #2a2725;
+          color: #444f4f;
         }
         .w {
           display: inline-block;
@@ -202,7 +197,7 @@
         /* ---------- Illustration ---------- */
         .ln {
           fill: none;
-          stroke: #2a2725;
+          stroke: #444f4f;
           stroke-width: 3.2;
           stroke-linecap: round;
           stroke-linejoin: round;
@@ -213,16 +208,16 @@
           fill-opacity: 0;
         }
         .ln.f-red {
-          fill: #c8102e;
+          fill: #ca2c35;
         }
         .ln.f-deep {
-          fill: #8e1520;
+          fill: #6d131b;
         }
         .ln.f-paper {
-          fill: #fffdf9;
+          fill: #ffffff;
         }
         .ln.f-sand {
-          fill: #ece3d5;
+          fill: #dfe3dd;
         }
         .ln.f-leaf {
           fill: #b9c2a0;
@@ -280,13 +275,13 @@
               <!-- Sonne (übernimmt Zustand aus Szene 1: tief und blass) -->
               <g id="s2-sun">
                 <circle cx="668" cy="116" r="92" fill="url(#s2-halo-g)" />
-                <circle cx="668" cy="116" r="36" fill="#f2c36b" stroke="#2a2725" stroke-width="3.2" />
+                <circle cx="668" cy="116" r="36" fill="#f2c36b" stroke="#444f4f" stroke-width="3.2" />
               </g>
 
               <!-- Flugzeug + Flugbahn (Vorteil 4) -->
-              <path id="s2-trail" class="ln" pathLength="1" d="M70 176 L318 58" style="stroke: #8c857c; stroke-width: 2.4" />
+              <path id="s2-trail" class="ln" pathLength="1" d="M70 176 L318 58" style="stroke: #8a9493; stroke-width: 2.4" />
               <g id="s2-plane" class="s2-pop">
-                <path d="M-18 0 L16 -3 C22 -3 24 3 16 3 L-18 0 Z M-2 -1 L-10 -14 L-4 -14 L8 -2 Z M-2 1 L-10 14 L-4 14 L8 2 Z M-16 -1 L-20 -8 L-16 -8 L-10 -1 Z" fill="#fffdf9" stroke="#2a2725" stroke-width="2.4" stroke-linejoin="round" />
+                <path d="M-18 0 L16 -3 C22 -3 24 3 16 3 L-18 0 Z M-2 -1 L-10 -14 L-4 -14 L8 -2 Z M-2 1 L-10 14 L-4 14 L8 2 Z M-16 -1 L-20 -8 L-16 -8 L-10 -1 Z" fill="#ffffff" stroke="#444f4f" stroke-width="2.4" stroke-linejoin="round" />
               </g>
 
               <!-- ===== Haus (identisch zu Szene 1) ===== -->
@@ -381,7 +376,7 @@
 
                 <!-- Aufzug (Glasband) -->
                 <path class="ln fl f-glass" pathLength="1" d="M556 118 H580 V404 H556 Z" />
-                <rect id="s2-lift" class="s2-pop" x="559" y="358" width="18" height="36" rx="2" fill="#f2c36b" stroke="#2a2725" stroke-width="2" />
+                <rect id="s2-lift" class="s2-pop" x="559" y="358" width="18" height="36" rx="2" fill="#f2c36b" stroke="#444f4f" stroke-width="2" />
 
                 <!-- Fenster (Glas, Licht, Schein, Rahmen) -->
                 <g class="s2-win" data-order="4"><rect class="s2-glow" x="262" y="118" width="76" height="76" filter="url(#s2-blur)" /><rect class="s2-glass" x="272" y="128" width="56" height="56" /><rect class="s2-light" x="272" y="128" width="56" height="56" /><path class="ln" pathLength="1" d="M272 128 H328 V184 H272 Z M300 128 V184" /></g>
@@ -402,7 +397,7 @@
                 <path class="ln" pathLength="1" d="M444 312 V282 H462 M444 296 H462 V312" />
                 <path class="ln" pathLength="1" d="M404 312 V296 M396 296 H426 M418 296 V312" />
                 <path class="ln fl f-paper" pathLength="1" d="M404 296 V286 H416 V296 Z M416 289 C422 289 422 294 416 294" />
-                <g fill="none" stroke="#8c857c" stroke-width="2.2" stroke-linecap="round">
+                <g fill="none" stroke="#8a9493" stroke-width="2.2" stroke-linecap="round">
                   <path class="s2-steam s2-pop" d="M408 282 C404 276 412 272 408 264" />
                   <path class="s2-steam s2-pop" d="M413 282 C409 276 417 272 413 264" />
                 </g>
@@ -410,22 +405,22 @@
                 <path class="ln fl f-deep" pathLength="1" d="M344 312 H476 V321 H344 Z" />
 
                 <!-- Herzen (Vorteil 5) -->
-                <path class="s2-heart s2-pop" d="M400 252 C392 246 388 240 392 235 C395 231 400 233 400 237 C400 233 405 231 408 235 C412 240 408 246 400 252 Z" fill="#c8102e" />
-                <path class="s2-heart s2-pop" d="M428 244 C420 238 416 232 420 227 C423 223 428 225 428 229 C428 225 433 223 436 227 C440 232 436 238 428 244 Z" fill="#c8102e" />
-                <path class="s2-heart s2-pop" d="M452 254 C444 248 440 242 444 237 C447 233 452 235 452 239 C452 235 457 233 460 237 C464 242 460 248 452 254 Z" fill="#c8102e" />
+                <path class="s2-heart s2-pop" d="M400 252 C392 246 388 240 392 235 C395 231 400 233 400 237 C400 233 405 231 408 235 C412 240 408 246 400 252 Z" fill="#ca2c35" />
+                <path class="s2-heart s2-pop" d="M428 244 C420 238 416 232 420 227 C423 223 428 225 428 229 C428 225 433 223 436 227 C440 232 436 238 428 244 Z" fill="#ca2c35" />
+                <path class="s2-heart s2-pop" d="M452 254 C444 248 440 242 444 237 C447 233 452 235 452 239 C452 235 457 233 460 237 C464 242 460 248 452 254 Z" fill="#ca2c35" />
 
                 <!-- Erdgeschoss: Bäckerei mit Markise, Eingang, Praxis-Schild -->
                 <path class="ln fl f-glass" pathLength="1" d="M272 456 H444 V512 H272 Z" />
                 <rect id="s2-shop-light" x="274" y="458" width="168" height="52" fill="#f2c36b" opacity="0" />
                 <g id="s2-awning">
                   <path class="ln fl f-red" pathLength="1" d="M262 428 H454 L446 452 H270 Z" />
-                  <text class="s2-pop" id="s2-shop-sign" x="358" y="445" text-anchor="middle" font-family="Montserrat" font-weight="700" font-size="13" letter-spacing="3" fill="#fffdf9">BÄCKEREI</text>
+                  <text class="s2-pop" id="s2-shop-sign" x="358" y="445" text-anchor="middle" font-family="Montserrat" font-weight="700" font-size="13" letter-spacing="3" fill="#ffffff">BÄCKEREI</text>
                 </g>
                 <path class="ln fl f-glass" pathLength="1" d="M478 440 H530 V520 H478 Z M504 440 V520" />
                 <path class="ln" pathLength="1" d="M470 432 H538" />
                 <g id="s2-praxis" class="s2-pop">
-                  <rect x="540" y="444" width="28" height="28" rx="3" fill="#fffdf9" stroke="#2a2725" stroke-width="2.4" />
-                  <path d="M554 450 V466 M546 458 H562" stroke="#c8102e" stroke-width="4" stroke-linecap="round" />
+                  <rect x="540" y="444" width="28" height="28" rx="3" fill="#ffffff" stroke="#444f4f" stroke-width="2.4" />
+                  <path d="M554 450 V466 M546 458 H562" stroke="#ca2c35" stroke-width="4" stroke-linecap="round" />
                 </g>
                 <path class="ln" pathLength="1" d="M30 520 H770" />
               </g>

@@ -2,7 +2,8 @@
 
 Info- und Werbefilm (75 s) für Eigentümer im Ruhestand: vom zu groß gewordenen Haus in eine
 komfortable Wohnung – begleitet von KNIGGE Immobilien. Gebaut mit [HyperFrames](https://github.com/heygen-com/hyperframes)
-(HTML → Video), eine Szenenbasis für beide Formate.
+(HTML → Video), eine Szenenbasis für beide Formate. CI nach knigge-immobilien.de: Montserrat,
+Rot #CA2C35, Bordeaux #6D131B, Schiefergrau #444F4F, Hellgrau #ECEEEA.
 
 | Datei | Format | Einsatz |
 | --- | --- | --- |
@@ -33,7 +34,6 @@ formats/9x16.html       9:16-Host (Reels) – nutzt dieselben Szenen
 compositions/           Szenen (Layout passt sich per Container-Queries an)
   bg.html  chrome.html  s1-haus.html … s6-kontakt.html
 assets/audio/           Musik (eigene Komposition, siehe tools/music)
-assets/fonts/           Newsreader (SIL OFL); Montserrat kommt vom Renderer
 assets/vendor/          GSAP (lokal, damit Renders offline funktionieren)
 BRIEF.md · frame.md · STORYBOARD.md · SCRIPT.md
 ```
@@ -60,9 +60,8 @@ SoundFont: [GeneralUser GS](https://github.com/mrbumpy409/GeneralUser-GS) – Li
 
 ## Vor Veröffentlichung prüfen
 
-- **Logo:** `compositions/chrome.html` und `compositions/s6-kontakt.html` enthalten einen
-  SVG-Nachbau der Bildmarke (Original-Datei war nicht verfügbar). Bei Bedarf durch die
-  Original-Logodatei ersetzen.
+- **Logo:** `compositions/chrome.html` und `compositions/s6-kontakt.html` enthalten einen am
+  Website-Logo vermessenen SVG-Nachbau (Original-Vektordatei lag nicht vor).
 - **Fakten:** Telefonnummer 02202 12 40 300, „kostenlose Wertermittlung“,
   „rund 1.600 verwaltete Wohneinheiten“.
 - **Reels-Safe-Zone:** Pflichtinhalte liegen zwischen ca. 14 % und 79 % der Bildhöhe.

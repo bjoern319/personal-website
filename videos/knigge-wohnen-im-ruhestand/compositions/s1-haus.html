@@ -6,12 +6,6 @@
   <body>
     <template id="s1-haus-template">
       <style>
-        @font-face {
-          font-family: "Newsreader";
-          src: url("assets/fonts/Newsreader-Italic-latin.woff2") format("woff2");
-          font-style: italic;
-          font-weight: 200 800;
-        }
         #root {
           position: absolute !important;
           inset: 0 !important;
@@ -20,7 +14,7 @@
           container: scene / size;
           overflow: hidden;
           font-family: "Montserrat", sans-serif;
-          color: #2a2725;
+          color: #444f4f;
         }
 
         /* ---------- Layout 16:9 ---------- */
@@ -72,26 +66,25 @@
             bottom: auto;
             height: 23cqh;
           }
-          .s1-q {
-            font-size: 7.3cqmin;
+          #root .s1-q {
+            font-size: 6.3cqmin;
           }
-          .s1-mem {
+          #root .s1-mem {
             font-size: 5.9cqmin;
           }
         }
 
         /* ---------- Typografie ---------- */
         .s1-serif {
-          font-family: "Newsreader", serif;
-          font-style: italic;
+          font-family: "Montserrat", sans-serif;
           font-weight: 400;
         }
         .s1-q {
           margin: 0;
-          font-size: 6.6cqmin;
-          line-height: 1.14;
+          font-size: 5.6cqmin;
+          line-height: 1.2;
           letter-spacing: -0.01em;
-          color: #2a2725;
+          color: #444f4f;
         }
         .s1-mem {
           margin: 0 0 1.4cqmin;
@@ -99,23 +92,24 @@
           font-weight: 700;
           line-height: 1.2;
           letter-spacing: -0.02em;
-          color: #2a2725;
+          color: #444f4f;
         }
         .s1-sub {
           margin: 0 0 2cqmin;
           font-size: 4.4cqmin;
           font-weight: 400;
           line-height: 1.25;
-          color: #5f5a54;
+          color: #5e6a6a;
         }
         .s1-big {
           margin: 0;
-          font-size: 9cqmin;
-          line-height: 1.04;
-          color: #2a2725;
+          font-size: 7.4cqmin;
+          line-height: 1.1;
+          letter-spacing: -0.02em;
+          color: #444f4f;
         }
         .s1-red {
-          color: #c8102e;
+          color: #ca2c35;
         }
         .w {
           display: inline-block;
@@ -131,23 +125,23 @@
           white-space: nowrap;
           font-size: 3.3cqmin;
           font-weight: 700;
-          color: #2a2725;
-          background: #fffdf9;
-          border: 0.32cqmin solid #2a2725;
-          border-radius: 999px;
+          color: #444f4f;
+          background: #ffffff;
+          border: 0.32cqmin solid #444f4f;
+          border-radius: 0.9cqmin;
           padding: 0.8cqmin 2.3cqmin 0.9cqmin;
-          box-shadow: 0 0.7cqmin 0 rgba(42, 39, 37, 0.14);
+          box-shadow: 0 0.7cqmin 0 rgba(68, 79, 79, 0.14);
         }
         .s1-tag-red {
-          color: #fffdf9;
-          background: #c8102e;
-          border-color: #8e1520;
+          color: #ffffff;
+          background: #ca2c35;
+          border-color: #6d131b;
         }
 
         /* ---------- Illustration ---------- */
         .ln {
           fill: none;
-          stroke: #2a2725;
+          stroke: #444f4f;
           stroke-width: 3.2;
           stroke-linecap: round;
           stroke-linejoin: round;
@@ -158,16 +152,16 @@
           fill-opacity: 0;
         }
         .ln.f-red {
-          fill: #c8102e;
+          fill: #ca2c35;
         }
         .ln.f-deep {
-          fill: #8e1520;
+          fill: #6d131b;
         }
         .ln.f-paper {
-          fill: #fffdf9;
+          fill: #ffffff;
         }
         .ln.f-sand {
-          fill: #ece3d5;
+          fill: #dfe3dd;
         }
         .ln.f-leaf {
           fill: #b9c2a0;
@@ -204,11 +198,11 @@
               <!-- Sonne -->
               <g id="s1-sun">
                 <circle cx="668" cy="116" r="92" fill="url(#s1-halo-g)" />
-                <circle cx="668" cy="116" r="36" fill="#f2c36b" stroke="#2a2725" stroke-width="3.2" />
+                <circle cx="668" cy="116" r="36" fill="#f2c36b" stroke="#444f4f" stroke-width="3.2" />
               </g>
 
               <!-- Rauch -->
-              <g fill="none" stroke="#8c857c" stroke-width="3.2" stroke-linecap="round">
+              <g fill="none" stroke="#8a9493" stroke-width="3.2" stroke-linecap="round">
                 <path class="s1-smoke" d="M482 138 C472 120 494 106 484 88 C476 72 494 60 486 44" opacity="0" />
                 <path class="s1-smoke" d="M492 138 C484 120 504 104 494 86 C486 70 504 58 496 42" opacity="0" />
                 <path class="s1-smoke" d="M476 138 C466 122 488 108 478 90 C470 76 486 62 480 48" opacity="0" />

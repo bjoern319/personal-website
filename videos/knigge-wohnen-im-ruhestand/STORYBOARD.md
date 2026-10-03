@@ -12,7 +12,7 @@ rhythm: slow-WARM · quiet-HOLD · LIFT · flowing · pause · steady · warm ·
 Dieser Film sagt Eigentümern im Ruhestand, dass der Schritt vom großen Haus in eine Wohnung
 kein Verlust ist, sondern mehr Leben bedeutet – und dass KNIGGE ihnen den Aufwand abnimmt.
 
-Persistente Ebenen: `compositions/bg.html` (Leinen, Papierkorn, driftende K-Facetten, 0–75 s),
+Persistente Ebenen: `compositions/bg.html` (Hellgrau, Papierkorn, driftende K-Facetten, 0–75 s),
 `compositions/chrome.html` (Logo-Bug 1–65 s, Brand-Wipes bei 45 s und 66 s).
 
 | Frame | Beat | On screen | Why |
@@ -109,7 +109,7 @@ Fuß: „Ein Ansprechpartner – von Anfang bis Ende.“
 
 ## Video direction
 
-Leinen-Grund durchgehend, Linienillustration mit roten Akzenten, Newsreader Italic als
-Gefühlsstimme, Montserrat als KNIGGE-Stimme. Bewegungen weich und lesefreundlich (Text steht
+Hellgrauer Grund wie auf der Website, Linienillustration in Schiefergrau mit roten Akzenten,
+Montserrat Regular als ruhige Stimme, Montserrat Bold als KNIGGE-Stimme. Bewegungen weich und lesefreundlich (Text steht
 mindestens 2,5 s), Übergänge als Blende über den gemeinsamen Grund; zwei Brand-Wipes in
 KNIGGE-Rot markieren „jetzt kommt KNIGGE“ (45 s) und den Abschluss (66 s).

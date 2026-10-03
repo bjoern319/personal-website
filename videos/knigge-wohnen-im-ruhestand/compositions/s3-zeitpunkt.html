@@ -6,12 +6,6 @@
   <body>
     <template id="s3-zeitpunkt-template">
       <style>
-        @font-face {
-          font-family: "Newsreader";
-          src: url("assets/fonts/Newsreader-Italic-latin.woff2") format("woff2");
-          font-style: italic;
-          font-weight: 200 800;
-        }
         #root {
           position: absolute !important;
           inset: 0 !important;
@@ -20,7 +14,7 @@
           container: scene / size;
           overflow: hidden;
           font-family: "Montserrat", sans-serif;
-          color: #2a2725;
+          color: #444f4f;
         }
         /* aufgehende Sonne (ambient-glow-bloom) */
         .s3-sun-wrap {
@@ -42,7 +36,7 @@
         }
         .s3-ray {
           fill: none;
-          stroke: #c8102e;
+          stroke: #ca2c35;
           stroke-width: 1.1;
           stroke-linecap: round;
           stroke-dasharray: 1 2;
@@ -80,30 +74,29 @@
         }
         .s3-l2 {
           margin: 0;
-          font-family: "Newsreader", serif;
-          font-style: italic;
+          font-family: "Montserrat", sans-serif;
           font-weight: 400;
-          font-size: 9.2cqmin;
-          line-height: 1.12;
+          font-size: 7.6cqmin;
+          line-height: 1.16;
           letter-spacing: -0.01em;
         }
         .s3-mark {
           position: relative;
           display: inline-block;
           margin: 0 0.2em;
-          color: #c8102e;
+          color: #ca2c35;
         }
         .s3-mark svg {
           position: absolute;
           left: -13%;
-          top: -6%;
+          top: -13%;
           width: 126%;
-          height: 118%;
+          height: 128%;
           overflow: visible;
         }
         .s3-mark path {
           fill: none;
-          stroke: #c8102e;
+          stroke: #ca2c35;
           stroke-width: 3;
           stroke-linecap: round;
           stroke-dasharray: 1 2;

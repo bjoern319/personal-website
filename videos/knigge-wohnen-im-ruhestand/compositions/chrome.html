@@ -14,7 +14,7 @@
           container: scene / size;
           overflow: hidden;
           font-family: "Montserrat", sans-serif;
-          color: #2a2725;
+          color: #444f4f;
         }
         /* Logo-Bug (klein, oben links; im Hochformat oben mittig) */
         .ch-bug {
@@ -22,7 +22,7 @@
           left: 4cqw;
           top: 5.6cqh;
           height: 5.4cqmin;
-          width: 22.8cqmin;
+          width: 24.4cqmin;
         }
         .ch-bug-inner {
           width: 100%;
@@ -36,15 +36,15 @@
         }
         @container scene (orientation: portrait) {
           .ch-bug {
-            left: calc(50cqw - 13.3cqmin);
+            left: calc(50cqw - 14.25cqmin);
             top: 7.2cqh;
             height: 6.3cqmin;
-            width: 26.6cqmin;
+            width: 28.5cqmin;
           }
         }
         .ch-word {
           font-family: "Montserrat", sans-serif;
-          fill: #2a2725;
+          fill: #444f4f;
         }
         /* Brand-Wipe: zwei diagonale Bahnen in KNIGGE-Rot / Bordeaux (K-Faltung) */
         .ch-wipe {
@@ -62,39 +62,39 @@
           clip-path: polygon(20% 0, 100% 0, 80% 100%, 0 100%);
         }
         .ch-pane-red {
-          background: #c8102e;
+          background: #ca2c35;
         }
         .ch-pane-deep {
-          background: #8e1520;
+          background: #6d131b;
         }
       </style>
 
       <div id="root" data-composition-id="chrome" data-width="1920" data-height="1080" data-duration="75">
         <div class="ch-bug">
           <div class="ch-bug-inner" id="ch-bug" data-layout-allow-overlap>
-            <svg viewBox="0 0 422 100" role="img" aria-label="KNIGGE Immobilien" data-layout-allow-overlap>
+            <svg viewBox="0 0 452 100" role="img" aria-label="KNIGGE Immobilien" data-layout-allow-overlap>
               <defs>
-                <linearGradient id="ch-k-l" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#a30f21" />
-                  <stop offset="0.55" stop-color="#d4152d" />
-                  <stop offset="1" stop-color="#e01b31" />
+                <linearGradient id="ch-k-a" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="48.9" y2="39.6">
+                  <stop offset="0" stop-color="#5e0f18" />
+                  <stop offset="0.56" stop-color="#a4222b" />
+                  <stop offset="0.8" stop-color="#c12a33" />
+                  <stop offset="0.93" stop-color="#ca2c35" />
                 </linearGradient>
-                <linearGradient id="ch-k-r" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#6e0f17" />
-                  <stop offset="1" stop-color="#9c1b24" />
+                <linearGradient id="ch-k-r" gradientUnits="userSpaceOnUse" x1="47.5" y1="40.2" x2="100" y2="0">
+                  <stop offset="0" stop-color="#4a0a13" />
+                  <stop offset="1" stop-color="#b0252e" />
                 </linearGradient>
-                <linearGradient id="ch-k-b" x1="0" y1="1" x2="1" y2="0.6">
-                  <stop offset="0" stop-color="#8a0e1b" />
-                  <stop offset="0.5" stop-color="#c8132b" />
-                  <stop offset="1" stop-color="#de1a30" />
+                <linearGradient id="ch-k-b" gradientUnits="userSpaceOnUse" x1="0" y1="100" x2="100" y2="100">
+                  <stop offset="0" stop-color="#480a12" />
+                  <stop offset="0.5" stop-color="#a2222b" />
+                  <stop offset="0.85" stop-color="#ca2c35" />
                 </linearGradient>
               </defs>
-              <path d="M0 0 H62 L46 44 L0 100 Z" fill="url(#ch-k-l)" />
-              <path d="M62 0 H100 V100 L46 44 Z" fill="url(#ch-k-r)" />
-              <path d="M0 100 L46 44 L100 100 Z" fill="url(#ch-k-b)" />
-              <path d="M1 1 H99 V99 H1 Z" fill="none" stroke="#fffdf9" stroke-width="2" />
-              <text class="ch-word" data-layout-allow-overlap x="125" y="53" font-size="64" font-weight="700" textLength="294" lengthAdjust="spacing">KNIGGE</text>
-              <text class="ch-word" data-layout-allow-overlap x="126" y="97" font-size="41.5" font-weight="500" textLength="292" lengthAdjust="spacing">IMMOBILIEN</text>
+              <path id="ch-f-a" d="M0 0 H79.5 L0 100 Z" fill="url(#ch-k-a)" />
+              <path id="ch-f-r" d="M79.5 0 H100 V100 L47.5 40.2 Z" fill="url(#ch-k-r)" />
+              <path id="ch-f-b" d="M0 100 L47.5 40.2 L100 100 Z" fill="url(#ch-k-b)" />
+              <text class="ch-word" id="ch-w1" data-layout-allow-overlap x="125.2" y="53" font-size="77" font-weight="700" textLength="328.5" lengthAdjust="spacing">KNIGGE</text>
+              <text class="ch-word" id="ch-w2" data-layout-allow-overlap x="125.5" y="100" font-size="44.3" font-weight="400" textLength="330.5" lengthAdjust="spacing">IMMOBILIEN</text>
             </svg>
           </div>
         </div>

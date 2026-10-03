@@ -33,9 +33,9 @@ Psychologischer Bogen (Reihenfolge ist Absicht):
 
 ## Assets
 
-- assets/brand/knigge-logo.svg — Logo als Vektor **nachgebaut** nach CI-Mustern aus Canva (rotes K-Faltquadrat + Wortmarke Montserrat). Vor Veröffentlichung durch Original-Logodatei ersetzen.
+- Logo — als SVG nachgebaut und am Website-Logo vermessen (Facetten-Geometrie, Verläufe, Wortmarke Montserrat in #444F4F); in compositions/chrome.html und compositions/s6-kontakt.html.
 - assets/audio/knigge-theme.m4a — eigens komponierte Musik (Klavier/Streicher, 80 BPM, F-Dur), erzeugt mit tools/music/compose.py.
-- assets/fonts/ — Newsreader (OFL) für die emotionale Stimme; Montserrat ist im Renderer gebündelt.
+- Screenshots von knigge-immobilien.de (vom Nutzer) — Quelle für CI-Farben, Typografie, Buttons und Logo.
 
 ## Customizations
 
@@ -45,6 +45,6 @@ Psychologischer Bogen (Reihenfolge ist Absicht):
 
 ## Notes
 
-- Website knigge-immobilien.de war aus der Build-Umgebung nicht erreichbar (Netzwerk-Policy) → kein Website-Capture; CI aus vorhandenen KNIGGE-Canva-Designs abgeleitet.
+- Website knigge-immobilien.de war aus der Build-Umgebung nicht erreichbar (Netzwerk-Policy) → kein Website-Capture; CI aus Website-Screenshots des Nutzers vermessen (Rot #CA2C35, Bordeaux #6D131B, Schiefergrau #444F4F, Hellgrau #ECEEEA, nur Montserrat).
 - Zu prüfende Fakten vor Veröffentlichung: Telefonnummer 02202 12 40 300, „kostenlose Wertermittlung“, „rund 1.600 verwaltete Wohneinheiten“.
 - Reels-Safe-Zone: keine Pflichtinhalte im unteren ~20 % und oberen ~10 % des 9:16-Formats.
