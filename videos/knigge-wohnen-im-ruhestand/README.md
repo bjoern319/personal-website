@@ -5,10 +5,16 @@ komfortable Wohnung – begleitet von KNIGGE Immobilien. Gebaut mit [HyperFrames
 (HTML → Video), eine Szenenbasis für beide Formate. CI nach knigge-immobilien.de: Montserrat,
 Rot #CA2C35, Bordeaux #6D131B, Schiefergrau #444F4F, Hellgrau #ECEEEA.
 
+Alle Ausspielungen hochkant (9:16), gleicher Inhalt:
+
 | Datei | Format | Einsatz |
 | --- | --- | --- |
-| `renders/knigge-wohnen-im-ruhestand-16x9.mp4` | 1920×1080 | YouTube, Website |
-| `renders/knigge-wohnen-im-ruhestand-9x16.mp4` | 1080×1920 | Instagram Reels, Stories, Shorts |
+| `renders/knigge-wohnen-im-ruhestand-9x16-4k.mp4` | 2160×3840 | YouTube Shorts · Fernseher mit Hochkant-Wiedergabe |
+| `renders/knigge-wohnen-im-ruhestand-9x16.mp4` | 1080×1920 | Instagram Reels/Stories, Facebook |
+| `renders/knigge-wohnen-im-ruhestand-tv-4k-gedreht-im-uhrzeigersinn.mp4` | 3840×2160, Inhalt 90° gedreht | Fernseher hochkant montiert, ohne Drehfunktion |
+| `renders/knigge-wohnen-im-ruhestand-tv-4k-gedreht-gegen-uhrzeigersinn.mp4` | 3840×2160, Inhalt 90° gedreht | dito – falls das Bild mit der anderen Datei auf dem Kopf steht |
+
+Eine Querformat-Fassung (1920×1080) ist im Projekt enthalten: `npm run render:16x9`.
 
 ## Psychologischer Aufbau
 
@@ -43,8 +49,8 @@ BRIEF.md · frame.md · STORYBOARD.md · SCRIPT.md
 ```bash
 npm run dev            # Studio-Vorschau (16:9)
 npm run check          # Lint, Layout, Kontrast
-npm run render         # beide Formate nach renders/
-npm run render:9x16    # nur Hochformat
+npm run render         # 4K-Hochkant-Master + Instagram- und TV-Dateien (tools/export.sh)
+npm run render:16x9    # optional: Querformat
 ```
 
 ## Musik

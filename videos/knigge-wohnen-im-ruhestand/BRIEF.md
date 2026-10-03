@@ -3,8 +3,8 @@ workflow: general-video
 flow: automation
 storyboard: "no"
 message: "Nicht weniger Zuhause – mehr Leben: Der Umzug vom großen Haus in eine passende Wohnung ist ein Gewinn, und KNIGGE Immobilien begleitet Sie dabei von Anfang bis Ende."
-destination: youtube + instagram-reels
-aspect: 1920x1080 + 1080x1920
+destination: youtube-shorts + instagram-reels + tv-hochkant
+aspect: 1080x1920 (Master 2160x3840)
 language: de
 audience: "Eigentümer im Ruhestand (ca. 65–85) mit großem Einfamilienhaus in Bergisch Gladbach / Köln-Ost; sekundär deren erwachsene Kinder"
 length: 75s
@@ -39,7 +39,8 @@ Psychologischer Bogen (Reihenfolge ist Absicht):
 
 ## Customizations
 
-- Zwei Formate aus denselben Szenen: `index.html` (16:9, YouTube) und `formats/9x16.html` (9:16, Instagram Reels). Szenen layouten per Container-Queries.
+- Update Nutzerwunsch: „Für YouTube, Instagram und Fernseher hochkant (gleicher Inhalt wie Instagram)“ → 9:16 ist die Hauptfassung: 4K-Master (YouTube Shorts, TV), 1080×1920 (Instagram), gedrehte 3840×2160-Dateien für hochkant montierte TVs ohne Drehfunktion (tools/export.sh).
+- Querformat bleibt als Option im Projekt: `index.html` (16:9); die Szenen layouten per Container-Queries für beide Formate.
 - Musik-Struktur folgt exakt den Szenengrenzen (1 Takt = 3 s).
 - Optionaler Sprechertext in SCRIPT.md (für spätere Aufnahme, z. B. durch Inhaber/Makler).
 
