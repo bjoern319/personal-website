@@ -1,0 +1,10 @@
+node_modules/
+.hyperframes/
+snapshots/
+renders/.*
+renders/work-*/
+renders/master/
+renders/*.tmp.mp4
+*.log
+# Fertige Videos liegen im Repo bjoern319/Marketing-Videos
+renders/*.mp4
