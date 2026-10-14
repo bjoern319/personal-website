@@ -8,3 +8,4 @@ renders/.*
 # Fertige GIFs/WebPs liegen im Repo bjoern319/Marketing-Videos
 renders/*.gif
 renders/*.webp
+__pycache__/
