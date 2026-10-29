@@ -16,7 +16,7 @@ und --z (Zoom); Pins rechnen ihre Bildposition aus denselben Variablen und bleib
 Ortsnamen erscheinen nur, während die Kamera steht.
 
 Ändern: Texte in TEXT, Zeiten in SCENES, dann `python3 tools/build_reel.py` und `npm run check`.
-(Version 1 – ruhige Kamerafahrt, 15 s – liegt in der Git-Historie: Commit 4b93cc2.)
+(Version 1 – ruhige Kamerafahrt, 15 s – liegt in der Git-Historie: personal-website 4b93cc2, Marketing-Videos 08783a5.)
 """
 import json
 import math

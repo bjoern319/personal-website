@@ -19,7 +19,7 @@ läuft. Idee und weitere Varianten: `STORYLINES.md`, Gestaltung: `SPEC.md`, Prü
 
 Fertige Videos (im Repo bjoern319/Marketing-Videos): `renders/knigge-einzugsgebiet-reel-v2.mp4`
 (Version 2) und `renders/knigge-einzugsgebiet-reel.mp4` (Version 1, 15 s; Quelltext in der
-Git-Historie, Commit 4b93cc2).
+Git-Historie: personal-website 4b93cc2, Marketing-Videos 08783a5).
 
 ## Ändern & neu erzeugen
 
