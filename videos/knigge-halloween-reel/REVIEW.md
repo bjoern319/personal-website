@@ -27,7 +27,11 @@
   und Sonne überlappten im Wechsel; der Mond schob sich bei der Kamerafahrt hinter den Einstiegstitel
   (Titel geht jetzt früher); die Pointe mit dem Kind war zu klein – jetzt fährt die Kamera an die Tür.
 - Text im Band 168–1330 px, nicht unter der Aktionsleiste, keine Schrift unter 28 px.
-- Ton: siehe unten (gemessen nach dem Rendern, nicht gehört).
+- Ton (gemessen, nicht gehört): −15,8 LUFS integriert, True Peak −1,5 dBTP, kein Clipping; lautester
+  Moment bei 12,2 s (Aufbau vor „Zeit für neues Leben“).
+- Schrift im fertigen Video gegen die Schriftdatei geprüft: Red Hat Display (nur die Logo-Wortmarke ist
+  die des Logos).
+- Fertiges Video: H.264, 1080×1920, 30 fps, 840 Frames (28,0 s), AAC Stereo 48 kHz, 4,6 MB.
 
 ## Schwächste Stelle
 
