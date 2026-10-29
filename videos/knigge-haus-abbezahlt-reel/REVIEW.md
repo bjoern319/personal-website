@@ -27,7 +27,9 @@
   Gewichte zu klein (36 → 40 px, 92 → 100 px), der Drucker tauchte beim Schnitt schon auf (fährt jetzt
   von unten ein), Häkchen unter dem Stempel entfernt, ein Schleier ragte 10 px über den Bildrand.
 - Text im Band 168–1330 px, nichts unter der Aktionsleiste rechts, keine Schrift unter 28 px.
-- Ton: gemessen, nicht gehört – siehe unten.
+- Ton (gemessen, nicht gehört): Musik vorhanden, −15,1 LUFS integriert, True Peak −1,5 dBTP, kein
+  Clipping; der lauteste Moment liegt bei 12,8 s – auf „Welche Optionen gibt es?“.
+- Fertiges Video: H.264 High, 1080×1920, 30 fps, 833 Frames (27,77 s), AAC Stereo 48 kHz, 9,5 MB.
 - Nicht geprüft: die echte Instagram-Oberfläche auf einem Gerät.
 
 ## Schwächste Stelle
