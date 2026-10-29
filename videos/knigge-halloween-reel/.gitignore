@@ -1,0 +1,7 @@
+node_modules/
+.hyperframes/
+snapshots/
+# Fertige Videos liegen im Repo bjoern319/Marketing-Videos
+renders/
+__pycache__/
+*.log
